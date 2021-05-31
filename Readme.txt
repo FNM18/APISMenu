@@ -1,4 +1,6 @@
-Thanks for downloading this template!
+#Pit's Burger Menu
+
+Credits:
 
 Template Name: Delicious
 Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
