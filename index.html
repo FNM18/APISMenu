@@ -2,36 +2,38 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="/assets/img/logoBig.png" type="image/png">
 
-  <title>Pit's </title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <title>Pit's </title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/logo.png" rel="icon">
-  <link href="assets/img/logo.png" rel="logo">
+    <!-- Favicons -->
+    <link href="assets/img/logo.png" rel="icon">
+    <link href="assets/img/logo.png" rel="logo">
 
-  <!-- Google Fonts -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet"> -->
-  
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/stars.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet"> -->
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/stars.css" rel="stylesheet">
 
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-  <script src="your-code.js"></script>
-  <!-- =======================================================
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="your-code.js"></script>
+    <!-- =======================================================
   * Template Name: Delicious - v4.2.0
   * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
   * Author: BootstrapMade.com
@@ -42,244 +44,286 @@
 <body>
 
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <div class="logo me-auto">
-        <img src="assets/img/logoBig.png">
-      </div>
+            <div class="logo me-auto">
+                <img src="assets/img/logoBig.png">
+            </div>
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
-          <li><a class="nav-link scrollto" href="#about">Sobre Nosotros</a></li>
-          <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-          <li><a class="nav-link scrollto" href="#specials">Especiales</a></li>
-          
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+                    <li><a class="nav-link scrollto" href="#about">Sobre Nosotros</a></li>
+                    <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+                    <li><a class="nav-link scrollto" href="#specials">Especiales</a></li>
 
-    </div>
-  </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <div id="heroCarousel">
+        </div>
+    </header>
+    <!-- End Header -->
 
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+        <div class="hero-container">
+            <div id="heroCarousel">
 
-        <div class="carousel-inner" role="listbox">
+                <ol class="carousel-indicators" id="hero-carousel-indicators" hidden></ol>
 
-          <!-- Slide 1 -->
-          <div class="carousel-item active" style="background: url(assets/img/burger.jpg);">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h1 class="animate__animated animate__fadeInDown"><span>Bienvenidos a Pit's !!</span> </h1>
-                <p class="animate__animated animate__fadeInUp">Las mejores hamburguesas en la ciudad</p>
-                <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Ir al Menu</a>
+                <div class="carousel-inner" role="listbox">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="carousel-item active" style="background: url(assets/img/index.jpg); opacity: 0.3;"></div>
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h1 class="animate__animated animate__fadeInDown"><span>¡Bienvenido a Pit's!</span> </h1>
+                                <p class="animate__animated animate__fadeInUp">Las mejores hamburguesas en Torreón</p>
+                                <div>
+                                    <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Ir al Menu</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-              </div>
             </div>
-          </div>
-
         </div>
-      </div>
-    </div>
-  </section><!-- End Hero -->
+    </section>
+    <!-- End Hero -->
 
-  <main id="main">
+    <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container-fluid">
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container-fluid">
 
-        <div class="row">
-
-          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/about.jpg");'>
-            <img src="assets/img/mexico.jpg" alt="" class="img-fluid">
-          </div>
-
-          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
-
-            <div class="content">
-              <h3><strong>Sobre Nosotros</strong></h3>
-              <p>
-                Fundado en 2021 en la ciudad de Torreón
-              </p>
-              <p class="fst-italic">
-                Contamos con una sucursal en:
-              </p>
-              <ul>
-                <li><i class="bx bx-check-double"></i> Toledo 653, Amp Fovissste la Rosita, 27269, Torreón, Coahuila</li>
-              </ul>
-             
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    
-
-    <!-- ======= Menu Section ======= -->
-    <section id="menu" class="menu">
-      <div class="container">
-
-        <div class="section-title">
-          <h2><span>Menu</span></h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="menu-flters">
-              <li data-filter="*" class="filter-active">Menu Completo</li>
-              <li data-filter=".filter-hamburguesas">Hamburguesas</li>
-              <li data-filter=".filter-pollo">Pollo</li>
-              <li data-filter=".filter-papas">Papas</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row menu-container">
-
-          <div class="col-lg-6 menu-item filter-hamburguesas">
-            <div class="menu-content">
-              <a href="#">La Regia</a><span>$20</span>
-            </div>
-            <div class="menu-ingredients">
-              Carne, queso blanco, tocino, salchicha y guacamole
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-hamburguesas">
-            <div class="menu-content">
-              <a href="#">BBQ Burger</a><span>$20</span>
-            </div>
-            <div class="menu-ingredients">
-              Carne, queso americano, salsa bbq, aros de cebolla empanizados y tocino
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-hamburguesas">
-            <div class="menu-content">
-              <a href="#">Chili House</a><span>$20</span>
-            </div>
-            <div class="menu-ingredients">
-              Carne, chili house, queso americano, mostaza, pepinillos, cebolla y tomate
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-hamburguesas">
-            <div class="menu-content">
-              <a href="#">Teriyaki Burger</a><span>$20</span>
-            </div>
-            <div class="menu-ingredients">
-             Carne, queso blanco, salsa teriyaki, piña, cebolla caramelizada, lechuga, tomate y mayonesa
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-hamburguesas">
-            <div class="menu-content">
-              <a href="#">Burger Deluxe</a><span>$20</span>
-            </div>
-            <div class="menu-ingredients">
-              Carne, queso blanco, tocino, chile california, lechuga, tomate, cebolla y salsa de cilantro
-            </div>
-          </div>
-
-
-          <div class="col-lg-6 menu-item filter-pollo">
-            <div class="menu-content">
-              <a href="#">Chicken Buffalo Ranch</a><span>$20</span>
-            </div>
-            <div class="menu-ingredients">
-             Pechuga empanizada, queso blanco, tocino, lechuga, tomate, y aderezo ranch
-            </div>
-          </div>
-
-      
-          <div class="col-lg-6 menu-item filter-papas">
-            <div class="menu-content">
-              <a href="#">Chili Pit's Fries</a><span>$20</span>
-            </div>
-            <div class="menu-ingredients">
-              Carne, chili house, queso americano, mostaza, pepinillos, cebolla y tomate
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Menu Section -->
-
-    <!-- ======= Specials Section ======= -->
-    <section id="specials" class="specials">
-      <div class="container">
-
-        <div class="section-title">
-          <h2><span>Especiales</span></h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-3">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Chili House</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Chili Pit's Fries</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-9 mt-4 mt-lg-0">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="tab-1">
                 <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Chili House</h3>
-                    <p class="fst-italic">Carne, chili house, queso americano, mostaza, pepinillos, cebolla y tomate</p>
-                    <p class="fst-italic">$20</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/chili.jpg" alt="" class="img-fluid">
-                  </div>
+
+                    <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/about.jpg");'>
+                        <img src="assets/img/torreon.jpg" alt="" class="img-fluid" style="border-radius: 50%;">
+                    </div>
+
+                    <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+                        <div class="content">
+                            <h3><strong>Sobre Nosotros</strong></h3>
+                            <p>
+                                Fundado en 2021 en la ciudad de Torreón
+                            </p>
+                            <p class="fst-italic">
+                                Contamos con una sucursal en:
+                            </p>
+                            <ul>
+                                <li><i class="bx bxs-map-pin"></i> Toledo 653, Amp Fovissste la Rosita, 27269, Torreón, Coahuila</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
                 </div>
-              </div>
-              <div class="tab-pane" id="tab-2">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Chili Pit's Fries</h3>
-                    <p class="fst-italic">Carne, chili house, queso americano, mostaza, pepinillos, cebolla y tomate</p>
-                    <p>$20</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/fries.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              </div>
+
             </div>
-          </div>
-        </div>
+        </section>
+        <!-- End About Section -->
 
-      </div>
-    </section><!-- End Specials Section -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <!-- ======= Menu Section ======= -->
+        <section id="menu" class="menu bg">
+            <div class="container menu-div">
+                <div class="section-title">
+                    <h2><span>Menu</span></h2>
+                </div>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <ul id="menu-flters">
+                            <li data-filter="*" class="filter-active">Menu Completo</li>
+                            <li data-filter=".filter-hamburguesas">Hamburguesas</li>
+                            <li data-filter=".filter-pollo">Pollo</li>
+                            <li data-filter=".filter-papas">Papas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row menu-container">
+
+                    <div class="col-lg-6 menu-item filter-hamburguesas">
+                        <div class="menu-content">
+                            <a href="show-burguer.html?regia">La Regia</a><span>$75</span>
+                        </div>
+                        <div class="menu-ingredients">
+                            Carne, queso blanco, tocino, salchicha y guacamole
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item filter-hamburguesas">
+                        <div class="menu-content">
+                            <a href="show-burguer.html?bbq">BBQ Burger</a><span>$65</span>
+                        </div>
+                        <div class="menu-ingredients">
+                            Carne, queso americano, salsa bbq, aros de cebolla empanizados y tocino
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item filter-hamburguesas">
+                        <div class="menu-content">
+                            <a href="show-burguer.html?chili">Chili House</a><span>$70</span>
+                        </div>
+                        <div class="menu-ingredients">
+                            Carne, chili house, queso americano, mostaza, pepinillos, cebolla y tomate
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item filter-hamburguesas">
+                        <div class="menu-content">
+                            <a href="show-burguer.html?teriyaki">Teriyaki Burger</a><span>$70</span>
+                        </div>
+                        <div class="menu-ingredients">
+                            Carne, queso blanco, salsa teriyaki, piña, cebolla caramelizada, lechuga, tomate y mayonesa
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item filter-hamburguesas">
+                        <div class="menu-content">
+                            <a href="show-burguer.html?deluxe">Burger Deluxe</a><span>$75</span>
+                        </div>
+                        <div class="menu-ingredients">
+                            Carne, queso blanco, tocino, chile california, lechuga, tomate, cebolla y salsa de cilantro
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item filter-hamburguesas">
+                        <div class="menu-content">
+                            <a href="show-burguer.html?street">Street Burger</a><span>$55</span>
+                        </div>
+                        <div class="menu-ingredients">
+                            Carne, queso americano, wini rojo, mayonesa, lechuga, tomate, pepinillo, cebolla caramelizada, catsup y mostaza
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6 menu-item filter-pollo">
+                        <div class="menu-content">
+                            <a href="show-burguer.html?chicken">Chicken Buffalo Ranch</a><span>$75</span>
+                        </div>
+                        <div class="menu-ingredients">
+                            Pechuga empanizada, queso blanco, tocino, lechuga, tomate, y aderezo ranch
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6 menu-item filter-papas">
+                        <div class="menu-content">
+                            <a href="show-burguer.html?chili-fries">Chili Pit's Fries</a><span>$35</span>
+                        </div>
+                        <div class="menu-ingredients">
+                            Papas Fritas, chili y mezcla de queso americano y blanco
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item filter-papas">
+                        <div class="menu-content">
+                            <a href="#">Orden de papas</a><span>$15</span>
+                        </div>
+                        <div class="menu-ingredients">
+                            Papas Fritas
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Menu Section -->
+
+        <!-- ======= Specials Section ======= -->
+        <section id="specials" class="specials">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2><span>Especiales</span></h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3">
+                        <ul class="nav nav-tabs flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Chili House</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Chili Pit's Fries</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-9 mt-4 mt-lg-0">
+                        <div class="tab-content">
+                            <div class="tab-pane active show" id="tab-1">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Chili House</h3>
+                                        <p class="fst-italic">Carne, chili house, queso americano, mostaza, pepinillos, cebolla y tomate</p>
+                                        <p class="fst-italic">$70</p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="assets/img/chili.png" alt="" class="img-fluid" style="border-radius: 50%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-2">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Chili Pit's Fries</h3>
+                                        <p class="fst-italic">Papas Fritas, chili y mezcla de queso americano y blanco</p>
+                                        <p>$35</p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="assets/img/fries.jpg" alt="" class="img-fluid" style="border-radius: 50%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <!-- End Specials Section -->
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact" style="background: url(assets/img/contact.png); background-size: 100%;">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2><span>Ven a visitarnos</span></h2>
+                    <p style="color: #fff;">Toledo 653, Amp Fovissste la Rosita, 27269, Torreón, Coahuila.</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="map">
+                    <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14403.07994048201!2d-103.4096591763788!3d25.512716614275426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa2ad993bdf88fec8!2sBurger%20Men!5e0!3m2!1sen!2smx!4v1622426299723!5m2!1sen!2smx"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Section -->
+
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Template Main JS File -->
+        <script src="assets/js/main.js"></script>
 
 </body>
 
