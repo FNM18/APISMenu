@@ -4,7 +4,7 @@ include('ConnectionDB.php');
 $count = 0;
 $burger = $_POST["burger"];
 
-$sql = "SELECT Calificación, Comentario, DATE_FORMAT(Fecha, '%d/%m/%Y') AS Fecha FROM opiniones WHERE Hamburguesa = '$burger'";
+$sql = "SELECT Calificación, Comentario, DATE_FORMAT(Fecha, '%d/%m/%Y') AS Fecha FROM opiniones WHERE Hamburguesa = '$burger' ORDER BY DATE(Fecha) DESC";
 
 if (!($result = consultDB($sql))) {
     echo "<div class='section-title'>";
