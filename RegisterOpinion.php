@@ -3,19 +3,22 @@ session_start();
 include("ConnectionDB.php");
 
 /* Take data by $_POST function */
+$burger = $_POST['burger'];
 $rate = $_POST['rate'];
 $comment = $_POST['comment'];
-$date = date("d/m/Y");
+$date = date("Y/m/d");
 
-$consult = "INSERT INTO users (Calificación, Comentario, Fecha) VALUES('$rate', '$comment', '$date')";
+$consult = "INSERT INTO opiniones (Hamburguesa, Calificación, Comentario, Fecha) VALUES('$burger', $rate, '$comment', '$date')";
 
 $result = consultDB($consult);
 
 if($result == FALSE) {
-    echo "Hubo un problema al registrar su comentario.";
+    echo 0;
+    // echo "Hubo un problema al registrar su comentario.";
 }
 else {
-    echo "¡Gracias por su comentario!";
+    echo 1;
+    // echo "¡Gracias por su comentario!";
 }
 
 ?>

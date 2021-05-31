@@ -12,10 +12,6 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
 
-    <!-- Favicons -->
-    <link href="assets/img/logo.png" rel="icon">
-    <link href="assets/img/logo.png" rel="logo">
-
     <!-- Google Fonts -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet"> -->
 
@@ -33,7 +29,6 @@
 
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script src="your-code.js"></script>
     <!-- =======================================================
   * Template Name: Delicious - v4.2.0
   * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
@@ -104,74 +99,7 @@
                     <h2><span>Opiniones</span></h2>
                 </div>
 
-                <div class="row menu-container">
-
-                    <div class="col-lg-6 menu-item filter-hamburguesas">
-                        <div class="menu-content">
-                            <span>La Regia</span><span></span>
-                        </div>
-                        <div class="menu-ingredients">
-                            Carne, queso blanco, tocino, salchicha y guacamole
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 menu-item filter-hamburguesas">
-                        <div class="menu-content">
-                            <a href="#">BBQ Burger</a><span>$20</span>
-                        </div>
-                        <div class="menu-ingredients">
-                            Carne, queso americano, salsa bbq, aros de cebolla empanizados y tocino
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 menu-item filter-hamburguesas">
-                        <div class="menu-content">
-                            <a href="#">Chili House</a><span>$20</span>
-                        </div>
-                        <div class="menu-ingredients">
-                            Carne, chili house, queso americano, mostaza, pepinillos, cebolla y tomate
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 menu-item filter-hamburguesas">
-                        <div class="menu-content">
-                            <a href="#">Teriyaki Burger</a><span>$20</span>
-                        </div>
-                        <div class="menu-ingredients">
-                            Carne, queso blanco, salsa teriyaki, piña, cebolla caramelizada, lechuga, tomate y mayonesa
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 menu-item filter-hamburguesas">
-                        <div class="menu-content">
-                            <a href="#">Burger Deluxe</a><span>$20</span>
-                        </div>
-                        <div class="menu-ingredients">
-                            Carne, queso blanco, tocino, chile california, lechuga, tomate, cebolla y salsa de cilantro
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-6 menu-item filter-pollo">
-                        <div class="menu-content">
-                            <a href="#">Chicken Buffalo Ranch</a><span>$20</span>
-                        </div>
-                        <div class="menu-ingredients">
-                            Pechuga empanizada, queso blanco, tocino, lechuga, tomate, y aderezo ranch
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-6 menu-item filter-papas">
-                        <div class="menu-content">
-                            <a href="#">Chili Pit's Fries</a><span>$20</span>
-                        </div>
-                        <div class="menu-ingredients">
-                            Carne, chili house, queso americano, mostaza, pepinillos, cebolla y tomate
-                        </div>
-                    </div>
-
-                </div>
+                <div class="row menu-container" id="comments"> </div>
 
             </div>
         </section>
@@ -184,7 +112,7 @@
             </div>
 
             <div class="container">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <form action="" role="form" class="php-email-form">
                     <div class="rating">
                         <i class="rating__star far fa-star"></i>
                         <i class="rating__star far fa-star"></i>
@@ -194,14 +122,14 @@
                     </div>
 
                     <div class="form-group">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Comentario" required oninvalid="this.setCustomValidity('Escribe tu comentario')" oninput="setCustomValidity('')"></textarea>
+                        <textarea class="form-control" name="comment" id="comment" rows="5" placeholder="Comentario" required oninvalid="this.setCustomValidity('Escribe tu comentario')" oninput="setCustomValidity('')"></textarea>
                     </div>
                     <div class="my-3">
                         <div class="loading">Loading</div>
                         <div class="error-message"></div>
-                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                        <div class="sent-message">¡Gracias por tu comentario!</div>
                     </div>
-                    <div class="text-center"><button type="submit">Send Message</button></div>
+                    <div class="text-center"><button type="submit" id="submit">Send Message</button></div>
                 </form>
 
             </div>
@@ -222,5 +150,9 @@
         <script src="assets/js/burger.js"></script>
 
 </body>
+
+
+<script>
+</script>
 
 </html>

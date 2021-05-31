@@ -1,4 +1,6 @@
 var burger = location.search.substring(1);
+var rate = 0;
+console.log("Hola");
 
 $(document).ready(function() {
     var image = "index.jpg";
@@ -45,6 +47,67 @@ $(document).ready(function() {
     $('#burger-name').html(name);
     $('#ingredients').html(ingredients);
 
+    var info = "burger=" + burger;
+    var no_error = true;
+
+    console.log(info);
+
+    $.ajax({
+        url: "get-comments.php",
+        data: info,
+        async: false,
+        type: "POST",
+        dataType: "text",
+        success: function(data) {
+            $('#comments').html(data);
+        }
+    });
+});
+
+// Prevent reload
+$(document).ready(function() {
+    $('#submit').click(function(e) {
+        e.preventDefault();
+    });
+});
+
+// Try insert new user
+$('#submit').click(function() {
+    var form = $("form")[0];
+    form.checkValidity();
+    form.reportValidity();
+
+    if (form.reportValidity()) {
+
+        var comment = document.getElementById('comment').value;
+
+        var info = "comment=" + comment + "&rate=" + rate + "&burger=" + burger;
+        var no_error = true;
+
+        console.log(info);
+
+        $.ajax({
+            url: "RegisterOpinion.php",
+            data: info,
+            async: false,
+            type: "POST",
+            dataType: "text",
+            success: function(data) {
+                no_error = data;
+            }
+        });
+
+        console.log(no_error);
+
+        if (no_error) {
+            $(".sent-message").show();
+        } else {
+            $('.error-message').html("Hubo un problema al registrar su comentario.").show();
+        }
+
+    } else {
+        return;
+    }
 });
 
 const ratingStars = [...document.getElementsByClassName("rating__star")];
@@ -57,9 +120,13 @@ function executeRating(stars) {
     stars.map((star) => {
         star.onclick = () => {
             i = stars.indexOf(star);
+            rate = i + 1;
+            console.log(rate);
 
             if (star.className === starClassInactive) {
-                for (i; i >= 0; --i) stars[i].className = starClassActive;
+                for (i; i >= 0; --i) {
+                    stars[i].className = starClassActive;
+                }
             } else {
                 for (i; i < starsLength; ++i) stars[i].className = starClassInactive;
             }
@@ -67,3 +134,13 @@ function executeRating(stars) {
     });
 }
 executeRating(ratingStars);
+
+/*
+<div class="col-lg-6 menu-item filter-hamburguesas">
+    <div class="menu-content">
+        <span class="rate"></span><span id="date"></span>
+    </div>
+    <div class="comment"></div>
+</div>
+
+*/

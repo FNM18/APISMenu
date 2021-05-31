@@ -1690,3 +1690,17 @@ section {
     font-size: 50pt;
     margin: 0px 10px;
 }
+
+
+/*csslint important: true*/
+
+.rate {
+    padding-left: 0px ! important;
+}
+
+.comment {
+    font-style: italic;
+    font-size: 14px;
+    font-family: "Comic Neue", sans-serif;
+    color: #948c81;
+}
